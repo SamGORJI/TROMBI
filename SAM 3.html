@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color:powderblue;">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .main-title{
+    color: #c72525;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.7em 0;
+  }
+  
+  .container{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+  }
+  @media screen and (max-width: 640px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container{
+      width: 33.33333%;
+    }
+  }
+  
+  .container .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+    top: 80%;
+  }
+  
+  .fadeIn-top{
+    top: 20%;
+  }
+  
+  .fadeIn-left{
+    left: 20%;
+  }
+  
+  .fadeIn-right{
+    left: 80%;
+  }
+</style>
+</head>
+<body>
+    <h1 class="main-title">Galerie de photos de Sam</h1>
+
+    <div class="container">
+      <h3 class="title">Jimmy’s Monte-Carlo</h3>
+      <div class="content">
+       
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/1.jpg">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">champagne dom perignon</h3>
+            <p class="content-text"></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">Ma chambre préférée</h3>
+      <div class="content">
+        
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/2.jpg">
+          <div class="content-details fadeIn-top">
+            <h3>Ma chambre préférée</h3>
+            <p></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">Lampe</h3>
+      <div class="content">
+       
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/3.jpg">
+          <div class="content-details fadeIn-left">
+            <h3>Lampe</h3>
+            <p></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">RER PARIS </h3>
+      <div class="content">
+        
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/4.jpg">
+          <div class="content-details fadeIn-right">
+            <h3>Sortir</h3>
+            <p></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">Italie</h3>
+      <div class="content">
+       
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/5.jpg">
+          <div class="content-details fadeIn-top fadeIn-left">
+            <h3>Venise</h3>
+            <p>Le restaurant</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">Plage de pierre</h3>
+      <div class="content">
+        
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/6.jpg">
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Thé</h3>
+            <p></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">PARIS</h3>
+      <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/7.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>le port marly</h3>
+            <p>Domaine national de Marly
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h3 class="title">Côte d'Azur
+    </h3>
+      <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="img/8.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-right">
+            <h3>Mer brillante</h3>
+            <p></p>
+          </div>
+        </a>
+      </div>
+    </div>
+</body>
+</html>
